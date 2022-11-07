@@ -1,0 +1,14 @@
+.greeting{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 40px;
+    
+}
+.greeting-txt{
+    display: flex;
+    justify-content: center;
+    color: black;
+}

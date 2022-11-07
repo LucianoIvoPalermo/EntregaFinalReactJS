@@ -1,0 +1,11 @@
+.navbar{   
+    display: flex; justify-content: space-between; 
+    background-color: aqua; color:green; 
+    font-weight: bolder; font-size: 15px;
+    height: 90px; width: 100%;
+
+};
+.nav-title{
+    display: flex;
+    justify-content: center;
+}
