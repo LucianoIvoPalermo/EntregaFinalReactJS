@@ -1,9 +1,13 @@
 import "./Marca.css"
-import logo from '../../../assets/images/logo.png'
+import logo from '../../../assets/Images/logo.png'
+import { Link } from "react-router-dom"
+
 const Marca = () => {
   return (
     <div className="logo">
-      <img className="nav-logo" src={logo} alt="logo farmacia"/>
+      <Link to='/'>
+        <img className="nav-logo" src={logo} alt="logo farmacia"/>
+      </Link>
     </div>
   )
 }

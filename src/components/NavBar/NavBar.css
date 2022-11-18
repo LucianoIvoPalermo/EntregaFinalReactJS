@@ -1,5 +1,12 @@
+.active{
+    color: red;
+}
+.inactive{
+    color: blue;
+}
+
 .navbar{   
-    display: flex; justify-content: space-between; 
+    display: flex; flex-direction: row; justify-content: space-between; 
     background-color: aqua; color:green; 
     font-weight: bolder; font-size: 15px;
     height: 90px; width: 100%;
@@ -8,4 +15,15 @@
 .nav-title{
     display: flex;
     justify-content: center;
+}
+.nav-list{
+    display: flex; justify-content: space-evenly;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 16px;
 }

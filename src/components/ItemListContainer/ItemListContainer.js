@@ -1,10 +1,39 @@
 import './ItemListContainer.css'
+import { useEffect, useState } from 'react'
+import { data } from '../../data/data';
+import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
-const ItemListContainer = (props) => {
-  console.log(props)
+const ItemListContainer = () => {
+
+  const [productList, setProductList] = useState([]);
+  const { categoryName } = useParams();
+  const getProducts = new Promise ((resolve, reject)=> {
+    setTimeout(() => {
+      if (categoryName){
+        const filteredData = data.filter((producto) => {
+          return producto.category === categoryName
+        });
+        resolve(filteredData);
+      }else{
+        resolve(data);
+      }
+      resolve(data);
+    }, 2000)
+  });
+
+  useEffect (() => {
+    getProducts.then((respuesta) => {
+      setProductList(respuesta);
+    })
+    setTimeout(() => {
+
+    },3000)
+    // eslint-disable-next-line
+  },[categoryName]);
   return (
-    <div className='greeting'>
-      <h2 className='greeting-txt'>{props.name}</h2>
+    <div>
+     <ItemList productList={productList} />
     </div>
   )
 }
