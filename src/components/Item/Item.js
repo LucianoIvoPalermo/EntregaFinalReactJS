@@ -1,17 +1,19 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import './Item.css'
 
 const Item = ({ producto }) => {
   return (
-    <div style={{ border:'3px solid black', display:'flex', backgroundColor:'green'}}>
-      <img style={{width:'200px', display: 'flex'}} alt={producto.name} 
-      src={`/images/${producto.image}.jpg`}/>
-        <div style={{ border:'3px solid blue' }}>
-        <h1>Nombre del producto:<Link to={`item/${producto.id}`}>{producto.name}
-        </Link>
-        </h1>
-        <h2>Fórmula: {producto.formula}</h2>
-        <h2>Precio: {producto.price}</h2>
-        </div>
+    <div className="item">
+        <img className="productImg" alt={producto.name}
+          src={`/images/${producto.imageId}`} />
+      <div className="letra">
+        <h3>Nombre del producto:
+          <NavLink to={`/item/${producto.id}`}>{producto.name}
+          </NavLink>
+        </h3>
+        <h4>Fórmula: {producto.description}</h4>
+        <h4>Precio: ${producto.price},00</h4>
+      </div>
     </div>
   )
 }

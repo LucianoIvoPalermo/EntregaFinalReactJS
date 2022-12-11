@@ -1,0 +1,17 @@
+.item{
+    box-shadow:  4px 4px 8px rgb(48, 5, 87);
+    background-color: rgb(75, 164, 241);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 600px;
+    margin: 15px 20px 20px 15px;}
+
+.productImg{
+    width: 100%;
+    height: 50%;
+}
+.letra{
+    width: 100%;
+    height: 50%;
+}

@@ -1,10 +1,8 @@
 import Marca from "./Marca/Marca"
 import './NavBar.css'
 import "./CartWidget/CartWidget"
-import CartWidget from "./CartWidget/CartWidget"
-import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom"
-
+import CartWidget from "./CartWidget/CartWidget"
 
 const NavBar = () => {
   return (
@@ -25,11 +23,8 @@ const NavBar = () => {
           <li className="nav-items">
           <NavLink to='/category/perfumeria'>Perfumes</NavLink>
           </li>
-          <li className="nav-items">
-          <NavLink to='/item'>Detalle</NavLink>
-          </li>
         </ul>
-        <NavLink to="/Cart"><CartWidget></CartWidget></NavLink>
+        <NavLink to="/Cart"><CartWidget/></NavLink>
       </div>
     </>
     )

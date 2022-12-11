@@ -9,7 +9,7 @@ export const data = [
     },
     {
         id: 2,
-        name: 'Ibupirac Capsulas Blandas 400 x 24',
+        name: 'Ibupirac 400mg Capsulas Blandas x 24',
         formula: 'Ibuprofeno 400mg',
         category: 'medicamentos',
         price: '$620,00',
@@ -33,7 +33,7 @@ export const data = [
     },
     {
         id: 5,
-        name: 'Agua Oxigenada 10 Vol X 900 Ml',
+        name: 'Agua Oxigenada Vol 10 X 900 Ml',
         formula: 'Agua Oxigenada Vol 10 900mg',
         category: 'insumos',
         price: '$1.257,00',

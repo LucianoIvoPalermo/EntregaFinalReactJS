@@ -1,0 +1,14 @@
+.saleContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.productBuy{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.dataBuy{
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

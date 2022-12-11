@@ -1,3 +1,9 @@
+# Ecommerce Green Cross
+
+Este proyecto, desarrollado con React JS, utilizando Firebase como base de datos, consiste en un ecommerce de una Farmacia.
+
+Para este proyecto se utilizaron elementos de React, React Router Dom, moment y Firebase además de la implementación de funciones, hooks, eventos, componentes e imágenes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

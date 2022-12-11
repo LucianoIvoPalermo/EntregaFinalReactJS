@@ -1,29 +1,34 @@
-.active{
-    color: red;
-}
-.inactive{
-    color: blue;
-}
-
 .navbar{   
-    display: flex; flex-direction: row; justify-content: space-between; 
-    background-color: aqua; color:green; 
-    font-weight: bolder; font-size: 15px;
-    height: 90px; width: 100%;
+    background-color: aqua; color:green;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    height: 100px; 
+    width: 100%;   
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 };
 .nav-title{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 .nav-list{
-    display: flex; justify-content: space-evenly;
+    width: 500px;
+    display: flex; 
+    justify-content: space-evenly;
+
 }
 .nav-items{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     margin-right: 30px;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
